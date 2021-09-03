@@ -18,8 +18,7 @@
 #include<iostream>
 #include <string>
 using namespace std;
-int count = 0;
-int countEncodings(string str, string ans)
+int countEncodings(string str)
 {
     int dp[str.length() + 1];
     dp[0] = 1;
@@ -64,5 +63,5 @@ int main()
 {
     string str;
     cin >> str;
-    cout << countEncodings(str, "");
+    cout << countEncodings(str);
 }
